@@ -17,5 +17,9 @@ a = list(map(gv, sheet['D'][1:]))
 
 plot.plot(y, t, label='Температура')
 plot.plot(y, a, label='Активность Солнца')
+plot.title("Показатели", loc = 'left')
+plot.xlabel("Годы")
+plot.ylabel("Температура/Активность")
+plot.legend()
 
 plot.show()
