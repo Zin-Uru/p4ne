@@ -15,6 +15,9 @@ n = nextCmd(SnmpEngine(),
             ObjectType(ObjectIdentity('1.3.6.1.2.1.2.2.1.2')),
             lexicographicMode=False)
 
+print(type(g))
+print(type(n))
+
 for r in g:
     for e in r[3]:
         print(e)
