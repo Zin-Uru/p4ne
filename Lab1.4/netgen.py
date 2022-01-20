@@ -8,6 +8,9 @@ class IPv4RandomNetwork(IPv4Network):
     def __init__(self, mstart=0, mend=32):
         IPv4Network.__init__(self, (random.randint(0x0B000000, 0xDF000000), random.randint(mstart, mend)), strict=False)
 
+    def __str__(self):
+        return "Strange network: " + IPv4Network.__str__(self)
+
     def regular(self):
         return self.is_global and not self.is_private
 
