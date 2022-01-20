@@ -9,7 +9,7 @@ class IPv4RandomNetwork(IPv4Network):
         IPv4Network.__init__(self, (random.randint(0x0B000000, 0xDF000000), random.randint(mstart, mend)), strict=False)
 
     def regular(self):
-        return self.is_global
+        return self.is_global and not self.is_private
 
 
 random.seed()
