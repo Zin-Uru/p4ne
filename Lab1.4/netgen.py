@@ -20,7 +20,7 @@ netlist = []
 while len(netlist) < 10:
     net = IPv4RandomNetwork(8, 24)
     if net.regular() and net not in netlist:
-        netlist.append(net)
+        netlist = netlist + [net, ]
 
 for i in netlist:
     print(i)
