@@ -12,7 +12,6 @@ class IPv4RandomNetwork(IPv4Network):
         return self.is_global and not self.is_private
 
 
-random.seed()
 netlist = []
 
 while len(netlist) < 10:
