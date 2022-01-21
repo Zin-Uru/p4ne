@@ -60,6 +60,10 @@ for i in result:
     print(i, end="")
 """
 
+ips = list(set(ips))
+ints = list(set(ints))
+hosts = list(set(hosts))
+
 print("IP addresses:")
 for i in ips:
     print(i, end=", ")
