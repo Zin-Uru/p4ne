@@ -6,7 +6,7 @@ import ipaddress
 folder = "/home/zinuru/PycharmProjects/pythonProject/Lab1.5/config_files/"
 pat = "ip address"
 
-flist = glob.glob(folder + "*.txt")
+flist = glob.iglob(folder + "*.txt")
 
 result = []
 
