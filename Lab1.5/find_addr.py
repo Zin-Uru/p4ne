@@ -54,7 +54,6 @@ for i in flist:
                 hosts += [result['host'], ]
 
 """
-
 result = list(set(result))
 
 for i in result:
