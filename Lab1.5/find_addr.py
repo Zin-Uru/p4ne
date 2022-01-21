@@ -65,16 +65,31 @@ ints = list(set(ints))
 hosts = list(set(hosts))
 
 print("IP addresses:")
+start = True
 for i in ips:
-    print(i, end=", ")
+    if start:
+        print(i, end="")
+        start = False
+    else:
+        print(", " + str(i), end="")
 print("\n")
 
 print("Interfaces:")
+start = True
 for i in ints:
-    print(i, end=", ")
+    if start:
+        print(i, end="")
+        start = False
+    else:
+        print(", " + i, end="")
 print("\n")
 
 print("Hosts:")
+start = True
 for i in hosts:
-    print(i, end=", ")
+    if start:
+        print(i, end="")
+        start = False
+    else:
+        print(", " + i, end="")
 print("\n")
