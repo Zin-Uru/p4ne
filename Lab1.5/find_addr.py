@@ -16,8 +16,8 @@ for i in flist:
             if pat in j:
                 splitted = j.strip().rstrip().split(" ")
                 try:
-                    addr1 = ipaddress.IPv4Address(splitted[2])
-                    addr2 = ipaddress.IPv4Address(splitted[3])
+                    ipaddress.IPv4Address(splitted[2])
+                    ipaddress.IPv4Address(splitted[3])
                     result += [j, ]
                 except (Exception, ):
                     pass
