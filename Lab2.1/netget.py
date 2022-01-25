@@ -8,6 +8,7 @@ import pprint
 log = 'restapi'
 pwd = 'j0sg1280-7@'
 port = '55443'
+buffer = 20000
 
 ip1 = '10.31.70.209'
 ip2 = '10.31.70.210'
@@ -27,7 +28,7 @@ session.send("terminal length 0\n")
 timeout(2)
 session.send("show interfaces\r\n")
 timeout()
-s = session.recv(20000).decode()
+s = session.recv(buffer).decode()
 session.close()
 
 result = {}
