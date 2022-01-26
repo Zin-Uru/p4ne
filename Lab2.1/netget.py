@@ -77,7 +77,6 @@ if req.status_code == 200:
     head = {"content-type": "application/json", "X-Auth-Token": token}
     url2 = 'https://' + ip2 + ':' + port + '/api/v1/interfaces'
     req = requests.get(url2, headers=head, verify=False)
-    pprint.pprint(req.json())
 else:
     print("Can't proceed: " + str(req.status_code) + " code")
 """
