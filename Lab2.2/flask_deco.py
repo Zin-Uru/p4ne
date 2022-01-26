@@ -42,7 +42,7 @@ for i in flist:
             elif list(result)[0] == 'int':
                 ints += [result['int'], ]
             elif list(result)[0] == 'host':
-                if list(result) not in hosts:
+                if result['host'] not in hosts:
                     hosts += [result['host'], ]
         hostinfo.update({hosts[0]: ips})
 
